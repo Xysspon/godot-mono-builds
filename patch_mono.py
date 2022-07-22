@@ -32,7 +32,8 @@ def main(raw_args):
         'bcl-profile-platform-override.diff',
         'mono_ios_asl_log_deprecated.diff',
         'wasm_m2n_trampolines_hook.diff',
-        'btls-cmake-args-linux-mingw.diff'
+        'btls-cmake-args-linux-mingw.diff',
+        'boringssl-msvc-c4065.diff'
     ]
 
     if os.path.isfile(os.path.join(mono_source_root, 'mono/tools/offsets-tool/offsets-tool.py')):

@@ -1,0 +1,12 @@
+diff --git a/external/boringssl/CMakeLists.txt b/external/boringssl/CMakeLists.txt
+index eaa59401..56f0cc74 100644
+--- a/external/boringssl/CMakeLists.txt
++++ b/external/boringssl/CMakeLists.txt
+@@ -47,6 +47,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+   endif()
+ elseif(MSVC)
+   set(MSVC_DISABLED_WARNINGS_LIST
++      "C4065" # switch statement contains 'default' but no 'case' labels
+       "C4100" # 'exarg' : unreferenced formal parameter
+       "C4127" # conditional expression is constant
+       "C4200" # nonstandard extension used : zero-sized array in
